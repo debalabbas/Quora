@@ -2,7 +2,7 @@
 
 I have used the Siamese Model to solve the above Problem
 
-### Siamese Model
+## Siamese Model
 A Siamese network is a neural network which uses the same weights while working in tandem on two different input vectors to compute comparable output vectors.The Siamese network I have implemented looks like this :
 
 
@@ -14,9 +14,9 @@ It is called a Siamese network as both the branches are idenctical and only one 
 
 
 One Model uses <b> Triplet Loss </b> while the other model uses <b> Contrastive Loss </b> as the Loss Function
-### Triplet Loss
+## Triplet Loss
 
-The triplet loss makes use of a baseline (anchor) input that is compared to a positive (truthy) input and a negative (falsy) input. The distance from the baseline (anchor) input to the positive (truthy) input is minimized, and the distance from the baseline (anchor) input to the negative (falsy) input is maximized. In math equations, you are trying to maximize the following. 
+The triplet loss makes use of a baseline (anchor) input that is compared to a positive (truth) input and a negative (false) input. The distance from the baseline (anchor) input to the positive (truth) input is minimized, and the distance from the baseline (anchor) input to the negative (false) input is maximized. In math equations, we are trying to maximize the following. 
   <p align = "center">
   <img src="https://latex.codecogs.com/gif.latex?\large&space;L(A,P,N)=max(||f(A)-f(P)||^{2}-||f(A)-f(N)||^{2}&plus;\alpha,0)" title="\large L(A,P,N)=max(||f(A)-f(P)||^{2}-||f(A)-f(N)||^{2}+\alpha,0)" />
   
@@ -48,5 +48,11 @@ Loss 2 will be the max of the closest negative minus the similarity of A and P p
 Then the Final Loss would be the mean of these two Losses
 
 
+## Contrastive Loss
 
+Contrastive Loss uses a Similarity Metric (eg: Distance between the two vectors) ,and tries to make the distance between similar vectors minimum and dissimilar vectors maximum.
+In the mathematical equation we are trying to minimize the following:
 
+<p align = "center">
+<img src="https://latex.codecogs.com/gif.latex?\large&space;Loss&space;=&space;Y*D^{2}&plus;(1-Y)*max(margin-D,0)^{2}" title="\large Loss = Y*D^{2}+(1-Y)*max(margin-D,0)^{2}" />
+  </p>
