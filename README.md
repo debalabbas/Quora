@@ -24,6 +24,10 @@ The triplet loss makes use of a baseline (anchor) input that is compared to a po
     
 A is the anchor input, for example q11, P the duplicate input, for example, q21, and N the negative input (the non duplicate question), for example q22.  α is a margin; you can think about it as a safety net, or by how much you want to push the duplicates from the non duplicates.
 
+To make this  loss function a bit more effective we will use <b> Hard Negative Mining </b>
+
+#### Hard Negative Mining
+
  <p align = "center">
 <img src="https://latex.codecogs.com/gif.latex?\large&space;Loss_{1}(A,P,N)=max(-cos(A,P)&plus;mean_{neg}&plus;\alpha&space;,0)" title="\large Loss_{1}(A,P,N)=max(-cos(A,P)+mean_{neg}+\alpha ,0)" /> </p>
 
