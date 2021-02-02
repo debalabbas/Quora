@@ -60,5 +60,9 @@ In the mathematical equation we are trying to minimize the following:
  In the Above Equation the variables are :
  
  Y is the Label, 1 if  similar and 0 if dissimilar.
+ 
+ 
  D is the Euclidean Distance between the Two Vectors.
+ 
+ 
  margin is a constant that we use to enforce minimum distance.
