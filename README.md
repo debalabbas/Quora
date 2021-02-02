@@ -22,8 +22,6 @@ The triplet loss makes use of a baseline (anchor) input that is compared to a po
   
   </p>
     
-A is the anchor input, for example q11, P the duplicate input, for example, q21, and N the negative input (the non duplicate question), for example q22.
+A is the anchor input, for example q11, P the duplicate input, for example, q21, and N the negative input (the non duplicate question), for example q22.  α is a margin; you can think about it as a safety net, or by how much you want to push the duplicates from the non duplicates.
 
-α is a margin; you can think about it as a safety net, or by how much you want to push the duplicates from the non duplicates.
-
-
+\begin{align}  \mathcal{Loss_1(A,P,N)} &=\max \left( -cos(A,P)  + mean_{neg} +\alpha, 0\right) \\  \mathcal{Loss_2(A,P,N)} &=\max \left( -cos(A,P)  + closest_{neg} +\alpha, 0\right) \\ \mathcal{Loss(A,P,N)} &= mean(Loss_1 + Loss_2) \\ \end{align}
