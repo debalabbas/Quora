@@ -7,7 +7,7 @@ A Siamese network is a neural network which uses the same weights while working 
 
 
 <p align="center">
-  <img src="https://zhangruochi.com/Question-duplicates/2020/08/23/siamese.png" width="500" height="500" title="hover text">
+  <img src="https://zhangruochi.com/Question-duplicates/2020/08/23/siamese.png" width="500" height="500">
 
 
 It is called a Siamese network as both the branches are idenctical and only one set of weights are updated which reflects the changes in both the branches 
@@ -39,3 +39,7 @@ To make this  loss function a bit more effective we will use <b> Hard Negative M
  <p align = "center">
 <img src="https://latex.codecogs.com/gif.latex?\large&space;Loss(A,P,N)=mean(Loss_{1}&plus;Loss_{2})" title="\large Loss(A,P,N)=mean(Loss_{1}+Loss_{2})" />
 </p>
+
+This can be easily explained using an example:
+
+<img src= "https://zhangruochi.com/Question-duplicates/2020/08/23/C3_W4_triploss1.png" width="500" height="500" >
