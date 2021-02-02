@@ -42,4 +42,4 @@ To make this  loss function a bit more effective we will use <b> Hard Negative M
 
 This can be easily explained using an example:
 
-<img src= "https://zhangruochi.com/Question-duplicates/2020/08/23/C3_W4_triploss1.png" width="500" height="500" >
+<img src= "https://zhangruochi.com/Question-duplicates/2020/08/23/C3_W4_triploss1.png" width="700" height="400" >
