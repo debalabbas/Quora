@@ -1,15 +1,18 @@
-# Quora Question SImilarity Problem
+# Quora Question Similarity Problem
 
-I have used the Siamese Architecture to solve the above Problem
+I have used the Siamese Model to solve the above Problem
 
-### Siamese Architecture
+### Siamese Model
+A Siamese network is a neural network which uses the same weights while working in tandem on two different input vectors to compute comparable output vectors.The Siamese network I have implemented looks like this :
+
+
 <p align="center">
   <img src="https://zhangruochi.com/Question-duplicates/2020/08/23/siamese.png" width="500" height="500" title="hover text">
 
 
-One of the Model is made using Trax while the Other one is Made using Tensorflow
+It is called a Siamese network as bost the Branches are Ideenctical and only one set of weights are updated which reflects the changes in both the branches 
 
-The Model made using trax uses Triplet Loss as the Loss Function to optimize the model
+
 
 #### Triplet Loss
 
