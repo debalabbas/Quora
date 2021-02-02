@@ -29,5 +29,5 @@ A is the anchor input, for example q11, P the duplicate input, for example, q21,
 
 <img src="https://latex.codecogs.com/gif.latex?\large&space;Loss_{2}(A,P,N)=max(-cos(A,P)&plus;closest_{neg}&plus;\alpha&space;,0)" title="\large Loss_{2}(A,P,N)=max(-cos(A,P)+closest_{neg}+\alpha ,0)" />
 
-<img src="https://latex.codecogs.com/gif.latex?\large&space;Loss(A,P,N)=mean(Loss_{1}+Loss_{2})" title="\large Loss(A,P,N)=mean(Loss_{1}+Loss_{2})"" />
+<img src="https://latex.codecogs.com/gif.latex?\large&space;Loss(A,P,N)=mean(Loss_{1}&plus;Loss_{2})" title="\large Loss(A,P,N)=mean(Loss_{1}+Loss_{2})" />
 </p>
