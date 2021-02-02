@@ -24,4 +24,4 @@ A is the anchor input, for example q11, P the duplicate input, for example, q21,
 α is a margin; you can think about it as a safety net, or by how much you want to push the duplicates from the non duplicates.
 
 
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{-T\pm\sqrt{b^2-4ac}}{2a}" title="\Large x=\frac{-T\pm\sqrt{b^2-4ac}}{2a}" />
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;L(A,P,N)=max(∥f(A)−f(P)∥^2−∥f(A)−f(N)∥^2+α,0)" title="\Large x=\frac{-T\pm\sqrt{b^2-4ac}}{2a}" />
