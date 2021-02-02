@@ -55,4 +55,10 @@ In the mathematical equation we are trying to minimize the following:
 
 <p align = "center">
 <img src="https://latex.codecogs.com/gif.latex?\large&space;Loss&space;=&space;Y*D^{2}&plus;(1-Y)*max(margin-D,0)^{2}" title="\large Loss = Y*D^{2}+(1-Y)*max(margin-D,0)^{2}" />
-  </p>
+ </p>
+ 
+ In the Above Equation the variables are :
+ 
+ Y is the Label, 1 if  similar and 0 if dissimilar.
+ D is the Euclidean Distance between the Two Vectors.
+ margin is a constant that we use to enforce minimum distance.
