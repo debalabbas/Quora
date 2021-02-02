@@ -17,7 +17,10 @@ One Model uses <b> Triplet Loss </b> while the other model uses <b> Contrastive 
 ### Triplet Loss
 
 The triplet loss makes use of a baseline (anchor) input that is compared to a positive (truthy) input and a negative (falsy) input. The distance from the baseline (anchor) input to the positive (truthy) input is minimized, and the distance from the baseline (anchor) input to the negative (falsy) input is maximized. In math equations, you are trying to maximize the following. 
-    <img src="https://latex.codecogs.com/gif.latex?\large&space;L(A,P,N)=max(||f(A)-f(P)||^{2}-||f(A)-f(N)||^{2}&plus;\alpha,0)" title="\large L(A,P,N)=max(||f(A)-f(P)||^{2}-||f(A)-f(N)||^{2}+\alpha,0)" />  
+  <p align = "center">
+  <img src="https://latex.codecogs.com/gif.latex?\large&space;L(A,P,N)=max(||f(A)-f(P)||^{2}-||f(A)-f(N)||^{2}&plus;\alpha,0)" title="\large L(A,P,N)=max(||f(A)-f(P)||^{2}-||f(A)-f(N)||^{2}+\alpha,0)" />
+  
+  </p>
     
 A is the anchor input, for example q11, P the duplicate input, for example, q21, and N the negative input (the non duplicate question), for example q22.
 
