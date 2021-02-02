@@ -16,12 +16,12 @@ It is called a Siamese network as both the branches are idenctical and only one 
 One Model uses <b> Triplet Loss </b> while the other model uses <b> Contrastive Loss </b> as the Loss Function
 ### Triplet Loss
 
-The triplet loss makes use of a baseline (anchor) input that is compared to a positive (truthy) input and a negative (falsy) input. The distance from the baseline (anchor) input to the positive (truthy) input is minimized, and the distance from the baseline (anchor) input to the negative (falsy) input is maximized. In math equations, you are trying to maximize the following.
-
-                              L(A,P,N)=max(∥f(A)−f(P)∥2−∥f(A)−f(N)∥2+α,0)
+The triplet loss makes use of a baseline (anchor) input that is compared to a positive (truthy) input and a negative (falsy) input. The distance from the baseline (anchor) input to the positive (truthy) input is minimized, and the distance from the baseline (anchor) input to the negative (falsy) input is maximized. In math equations, you are trying to maximize the following. 
+    
+    <a href="https://www.codecogs.com/eqnedit.php?latex=\large&space;L(A,P,N)=max(||f(A)-f(P)||^{2}-||f(A)-f(N)||^{2}&plus;\alpha,0)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\large&space;L(A,P,N)=max(||f(A)-f(P)||^{2}-||f(A)-f(N)||^{2}&plus;\alpha,0)" title="\large L(A,P,N)=max(||f(A)-f(P)||^{2}-||f(A)-f(N)||^{2}+\alpha,0)" /></a>  
+    
 A is the anchor input, for example q11, P the duplicate input, for example, q21, and N the negative input (the non duplicate question), for example q22.
 
 α is a margin; you can think about it as a safety net, or by how much you want to push the duplicates from the non duplicates.
 
 
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;L(A,P,N)=max(∥f(A)−f(P)∥^2−∥f(A)−f(N)∥^2+α,0)" title="\Large x=\frac{-T\pm\sqrt{b^2-4ac}}{2a}" />
