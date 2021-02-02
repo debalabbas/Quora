@@ -10,9 +10,18 @@ A Siamese network is a neural network which uses the same weights while working 
   <img src="https://zhangruochi.com/Question-duplicates/2020/08/23/siamese.png" width="500" height="500" title="hover text">
 
 
-It is called a Siamese network as bost the Branches are Ideenctical and only one set of weights are updated which reflects the changes in both the branches 
+It is called a Siamese network as both the branches are idenctical and only one set of weights are updated which reflects the changes in both the branches 
 
 
+One Model uses <b> Triplet Loss </b> while the other model uses <b> Contrastive Loss </b> as the Loss Function
+### Triplet Loss
 
-#### Triplet Loss
+The triplet loss makes use of a baseline (anchor) input that is compared to a positive (truthy) input and a negative (falsy) input. The distance from the baseline (anchor) input to the positive (truthy) input is minimized, and the distance from the baseline (anchor) input to the negative (falsy) input is maximized. In math equations, you are trying to maximize the following.
 
+                              L(A,P,N)=max(∥f(A)−f(P)∥2−∥f(A)−f(N)∥2+α,0)
+A is the anchor input, for example q11, P the duplicate input, for example, q21, and N the negative input (the non duplicate question), for example q22.
+
+α is a margin; you can think about it as a safety net, or by how much you want to push the duplicates from the non duplicates.
+
+
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{-T\pm\sqrt{b^2-4ac}}{2a}" title="\Large x=\frac{-T\pm\sqrt{b^2-4ac}}{2a}" />
